@@ -1,13 +1,5 @@
 import React, { useMemo } from "react";
 import Header from "../pages/Header";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-    faBolt,
-    faCloud, 
-    faUmbrella, 
-    faSnowflake, 
-    faSun 
-} from '@fortawesome/free-solid-svg-icons';
 import WeatherIcon from "./WeatherIcon";
 
 function WeatherCard({ 
@@ -25,10 +17,10 @@ function WeatherCard({
             <h1 className="websiteTitle">Weather App</h1>
             <Header />
             <div className="card">
-                <h2 className="cityName">{city}</h2>
                 <div className="WeatherCard--weatherType">
-                <WeatherIcon weatherType={weatherType}/>
-            </div>
+                    <h2 className="cityName">{city}</h2>
+                    <p><WeatherIcon class="icon" weatherType={weatherType}/></p>
+                </div>
                 <div className="current">
                     <h3>{weatherType}</h3>
                     <h3>{currentTemp}°F</h3>

@@ -48,7 +48,7 @@ function Home() {
     console.log({ cloudiness });
     
     return (
-        <div style={{ backgroundColor: `rgba(191,215,234,${cloudiness / 100})`}}>
+        <div style={{ backgroundColor: `rgba(11,57,84,${cloudiness / 100})`}}>
             <div className='weather'>
                 <WeatherCard 
                     city={city}

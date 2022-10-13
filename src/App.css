@@ -4,6 +4,7 @@ html {
     background-color: #BFD7EA;
     margin: 0 auto;
     max-width: 1200px;
+    min-height: 100vh;
     padding: 10px;
 } 
 
@@ -50,6 +51,14 @@ a:hover {
     font-family: 'Oldenburg', cursive;
     font-size: 48px;
     text-align: center;
+}
+
+.WeatherCard--weatherType {
+    text-align: center;
+}
+
+svg {
+    height: 250px;
 }
 
 .current {
