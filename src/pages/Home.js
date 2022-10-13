@@ -47,7 +47,7 @@ function Home() {
     console.log("state value", weatherData);
 
     return (
-        <div>
+        <div className='weather'>
             <WeatherCard 
                 city={city}
                 cloudiness={cloudiness}

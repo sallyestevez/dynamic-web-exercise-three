@@ -1,4 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&family=Rubik:wght@300;400;700&display=swap');
+
+html {
+    background-color: #BFD7EA;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 10px;
+} 
+
 header {
     display: flex;
-    justify-content: space-evenly;
+    font-family: 'Oldenburg', cursive;
+    gap: 50px;
+    justify-content: flex-end;
+    padding-bottom: 25px;
+
+}
+
+.websiteTitle {
+    color: #087E8B;
+    font-family: 'Oldenburg', cursive;
+    font-size: 64px;
+}
+
+a {
+    color: #C81D25;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF5A5F;
+}
+
+.weather {
+    padding: 50px;
+}
+
+.card {
+    background-color: #0B3954;
+    border: 5px dashed #087E8B;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0px 50px 50px 50px;
+}
+
+.cityName {
+    color: #BFD7EA;
+    font-family: 'Oldenburg', cursive;
+    font-size: 48px;
+    text-align: center;
+}
+
+.current {
+    color: #FF5A5F;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+
+.values {
+    color: #087E8B;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-around;
 }
