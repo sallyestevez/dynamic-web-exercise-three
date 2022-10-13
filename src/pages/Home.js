@@ -45,19 +45,22 @@ function Home() {
     }, [weatherData]);
 
     console.log("state value", weatherData);
-
+    console.log({ cloudiness });
+    
     return (
-        <div className='weather'>
-            <WeatherCard 
-                city={city}
-                cloudiness={cloudiness}
-                currentTemp={currentTemp} 
-                highTemp={highTemp}
-                humidity={humidity} 
-                lowTemp={lowTemp}
-                weatherType={weatherType}
-                windSpeed={windSpeed}
-            />
+        <div style={{ backgroundColor: `rgba(191,215,234,${cloudiness / 100})`}}>
+            <div className='weather'>
+                <WeatherCard 
+                    city={city}
+                    cloudiness={cloudiness}
+                    currentTemp={currentTemp} 
+                    highTemp={highTemp}
+                    humidity={humidity} 
+                    lowTemp={lowTemp}
+                    weatherType={weatherType}
+                    windSpeed={windSpeed}
+                />
+            </div>
         </div>
     );
 }
