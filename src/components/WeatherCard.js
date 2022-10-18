@@ -17,9 +17,9 @@ function WeatherCard({
             <h1 className="websiteTitle">Weather App</h1>
             <Header />
             <div className="card">
+            <h2 className="cityName">{city}</h2>
                 <div className="WeatherCard--weatherType">
-                    <h2 className="cityName">{city}</h2>
-                    <p><WeatherIcon class="icon" weatherType={weatherType}/></p>
+                    <WeatherIcon class="icon" weatherType={weatherType}/>
                 </div>
                 <div className="current">
                     <h3>{weatherType}</h3>

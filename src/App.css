@@ -57,9 +57,11 @@ a:hover {
     text-align: center;
 }
 
-svg {
-    height: 250px;
+.WeatherCard--weatherType svg {
+    height: auto;
+    width: 100px;
 }
+
 
 .current {
     color: #FF5A5F;
